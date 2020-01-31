@@ -1,0 +1,16 @@
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.exe
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.csprojAssemblyReference.cache
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.AssemblyInfoInputs.cache
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.AssemblyInfo.cs
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\nunit.framework.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.csproj.CopyComplete
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.deps.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.runtimeconfig.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.runtimeconfig.dev.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.pdb
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.pdb
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Nest.dll

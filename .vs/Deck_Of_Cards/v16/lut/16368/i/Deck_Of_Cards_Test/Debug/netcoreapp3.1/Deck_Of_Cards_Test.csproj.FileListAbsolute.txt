@@ -1,0 +1,13 @@
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.csprojAssemblyReference.cache
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.AssemblyInfoInputs.cache
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.AssemblyInfo.cs
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards.exe
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.deps.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.runtimeconfig.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.runtimeconfig.dev.json
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\b\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.csproj.CopyComplete
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_Cards_Test\Debug\netcoreapp3.1\Deck_Of_Cards_Test.dll

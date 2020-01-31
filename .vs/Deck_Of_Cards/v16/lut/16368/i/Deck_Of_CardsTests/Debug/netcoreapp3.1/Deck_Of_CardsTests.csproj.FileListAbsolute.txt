@@ -1,0 +1,2 @@
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_CardsTests\Debug\netcoreapp3.1\Deck_Of_CardsTests.AssemblyInfoInputs.cache
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\.vs\Deck_Of_Cards\v16\lut\0\i\Deck_Of_CardsTests\Debug\netcoreapp3.1\Deck_Of_CardsTests.AssemblyInfo.cs
