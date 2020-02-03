@@ -5,14 +5,15 @@ namespace Deck_Of_Cards
 {
     public class ShowPlayers
     {
-        public void PrintPlayers(List<Player> listOfPlayers)
+        public string PrintPlayers(List<Player> listOfPlayers)
         {
             foreach (var player in listOfPlayers)
             {
-                Console.Write($"{player.Name}  ");
-            };           
+                return player.Name;
+            };
+            return "I do not know what to put here";
         }
-        public void PrintHand(List<Player> listOfPlayers)
+        public string PrintHand(List<Player> listOfPlayers)
         {
             foreach (var player in listOfPlayers)
             {
@@ -20,10 +21,11 @@ namespace Deck_Of_Cards
                 Console.WriteLine("-----------");
                 foreach (var card in player.Hand)
                 {
-                    Console.WriteLine(card);
+                    return card;
                 }
-                Console.WriteLine("\n\n");
+                return "I do not what to put here";
             };
+            return "I do not what to put here";
         }
     }
 }

@@ -1,0 +1,44 @@
+[1mdiff --git a/.vs/Deck_Of_Cards/v16/.suo b/.vs/Deck_Of_Cards/v16/.suo[m
+[1mindex a63adc7..edc229b 100644[m
+Binary files a/.vs/Deck_Of_Cards/v16/.suo and b/.vs/Deck_Of_Cards/v16/.suo differ
+[1mdiff --git a/Deck_Of_Cards/Player/ShowPlayers.cs b/Deck_Of_Cards/Player/ShowPlayers.cs[m
+[1mindex 155487a..f5dc6fa 100644[m
+[1m--- a/Deck_Of_Cards/Player/ShowPlayers.cs[m
+[1m+++ b/Deck_Of_Cards/Player/ShowPlayers.cs[m
+[36m@@ -5,14 +5,15 @@[m [mnamespace Deck_Of_Cards[m
+ {[m
+     public class ShowPlayers[m
+     {[m
+[31m-        public void PrintPlayers(List<Player> listOfPlayers)[m
+[32m+[m[32m        public string PrintPlayers(List<Player> listOfPlayers)[m
+         {[m
+             foreach (var player in listOfPlayers)[m
+             {[m
+[31m-                Console.Write($"{player.Name}  ");[m
+[31m-            };           [m
+[32m+[m[32m                return player.Name;[m
+[32m+[m[32m            };[m
+[32m+[m[32m            return "I do not know what to put here";[m
+         }[m
+[31m-        public void PrintHand(List<Player> listOfPlayers)[m
+[32m+[m[32m        public string PrintHand(List<Player> listOfPlayers)[m
+         {[m
+             foreach (var player in listOfPlayers)[m
+             {[m
+[36m@@ -20,10 +21,11 @@[m [mnamespace Deck_Of_Cards[m
+                 Console.WriteLine("-----------");[m
+                 foreach (var card in player.Hand)[m
+                 {[m
+[31m-                    Console.WriteLine(card);[m
+[32m+[m[32m                    return card;[m
+                 }[m
+[31m-                Console.WriteLine("\n\n");[m
+[32m+[m[32m                return "I do not what to put here";[m
+             };[m
+[32m+[m[32m            return "I do not what to put here";[m
+         }[m
+     }[m
+ }[m
+[1mdiff --git a/Deck_Of_Cards/obj/Debug/netcoreapp3.1/Deck_Of_Cards.csprojAssemblyReference.cache b/Deck_Of_Cards/obj/Debug/netcoreapp3.1/Deck_Of_Cards.csprojAssemblyReference.cache[m
+[1mindex b9fdd53..4cfdd72 100644[m
+Binary files a/Deck_Of_Cards/obj/Debug/netcoreapp3.1/Deck_Of_Cards.csprojAssemblyReference.cache and b/Deck_Of_Cards/obj/Debug/netcoreapp3.1/Deck_Of_Cards.csprojAssemblyReference.cache differ
