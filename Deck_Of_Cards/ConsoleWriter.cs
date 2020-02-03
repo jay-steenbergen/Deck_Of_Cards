@@ -8,8 +8,14 @@ namespace Deck_Of_Cards
     {
         public void Write(string message)
         {
-            Console.Write($"{message}");
+            Console.WriteLine($"{message}");
         }
-
+        public void WriteList(List<string> listMessage)
+        {
+            foreach (var item in listMessage)
+            {
+                Console.Write($"{item} ");
+            }
+        }
     }
 }

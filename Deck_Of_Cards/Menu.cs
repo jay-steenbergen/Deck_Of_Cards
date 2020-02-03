@@ -23,8 +23,9 @@ namespace Deck_Of_Cards
 				Console.ForegroundColor = ConsoleColor.Blue;
 				Console.Write("Players: ");
 				Console.ForegroundColor = ConsoleColor.Cyan;
-				var getPlayers = showPlayers.PrintPlayers(listOfPlayers); //// Display Player names on screen
-				dispatcher.SendMessage(getPlayers);
+
+				var getPlayerNames = showPlayers.GetPlayerNames(listOfPlayers); //// Display Player names on screen
+				dispatcher.SendListMessage(getPlayerNames);
 
 				Console.ResetColor();
 				Console.WriteLine("\n=============================================================");

@@ -5,19 +5,6 @@ namespace Deck_Of_Cards
 {
     public class ShowPlayers
     {
-        public string PrintPlayers(List<Player> listOfPlayers)
-        {
-            int i = 0;
-            while(i < listOfPlayers.Count)
-            {
-                    foreach (var player in listOfPlayers)
-                    {
-                        return player.Name;
-                    };
-            }
-            return "No Players";
-
-        }
         public string PrintHand(List<Player> listOfPlayers)
         {
             foreach (var player in listOfPlayers)
@@ -32,9 +19,29 @@ namespace Deck_Of_Cards
             };
             return "No Players";
         }
-        public void TestIEnumerable()
+        public List<string> GetPlayerNames(List<Player> listOfPlayers)
         {
-
+            var listOfNames = new List<string>();
+            foreach (var player in listOfPlayers)
+            {
+                listOfNames.Add(player.Name);
+            };
+            return listOfNames;
+        }
+        static List<string> GetHand(List<Player> listOfPlayers, string playerName)
+        {
+            var listOfCards = new List<string>();
+            foreach (var player in listOfPlayers)
+            {
+                if (player.Name.Contains(playerName))
+                {
+                    foreach (var card in player.Hand)
+                    {
+                        listOfCards.Add(card);
+                    }
+                }
+            }
+            return listOfCards;
         }
     }
 }

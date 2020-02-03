@@ -16,5 +16,9 @@ namespace Deck_Of_Cards
         {
             writer.Write(message);
         }
+        public void SendListMessage(List<string> list)
+        {
+            writer.WriteList(list);
+        }
     }
 }
