@@ -6,6 +6,7 @@ namespace Deck_Of_Cards
 {
     public interface IWriter
     {
-        void WriteFile();
+        void Write(string message);
+
     }
 }

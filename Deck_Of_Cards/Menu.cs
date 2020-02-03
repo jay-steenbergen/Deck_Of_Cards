@@ -12,7 +12,8 @@ namespace Deck_Of_Cards
 				Deal deal = new Deal();
 				PlayersHand playersHand = new PlayersHand();
 				ShowPlayers showPlayers = new ShowPlayers();
-
+				var writer = new ConsoleWriter();
+				var dispatcher = new MessageDispatcher(writer);
 				/////////////////////////////////////////////////////////////////////////////////
 				Console.Clear();
 				Console.ResetColor();
@@ -22,7 +23,9 @@ namespace Deck_Of_Cards
 				Console.ForegroundColor = ConsoleColor.Blue;
 				Console.Write("Players: ");
 				Console.ForegroundColor = ConsoleColor.Cyan;
-				showPlayers.PrintPlayers(listOfPlayers); //// Display Player names on screen
+				var getPlayers = showPlayers.PrintPlayers(listOfPlayers); //// Display Player names on screen
+				dispatcher.SendMessage(getPlayers);
+
 				Console.ResetColor();
 				Console.WriteLine("\n=============================================================");
 				////////////////////////////////////////////////////////////////////////////////

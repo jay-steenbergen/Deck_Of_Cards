@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 
@@ -29,7 +30,7 @@ namespace Deck_Of_Cards
         }
 
         public List<Player> EnterNameOfPlayers(int input)
-            {
+        {
             /// User can now enter Names of players
             for (int i = 0; i < input;)
             {
@@ -47,5 +48,6 @@ namespace Deck_Of_Cards
             }
             return listOfPlayers;
         }
+
     }   
 }

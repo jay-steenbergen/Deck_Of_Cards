@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace Deck_Of_Cards
 {
@@ -15,5 +16,6 @@ namespace Deck_Of_Cards
             Name = name;
             Hand = new List<string>();
         }
+      
     }
 }
