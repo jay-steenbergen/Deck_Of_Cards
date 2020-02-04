@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Deck_Of_Cards
 {
-	public class Deal 
+	public class Deal : IDeal
 	{
 		public string dealOneCard(List<KeyValuePair<string, string>> shuffledDeck)
 		{
@@ -14,24 +14,24 @@ namespace Deck_Of_Cards
 			string deltCardValue = "";
 			string deltCardSuit = "";
 			if (shuffledDeck.Count > 0)
-			{		
-				deltCardValue = (from card in shuffledDeck 
-							     select card.Key)
-						     	 .FirstOrDefault();
+			{
+				deltCardValue = (from card in shuffledDeck
+								 select card.Key)
+								  .FirstOrDefault();
 
 				deltCardSuit = (from card in shuffledDeck
-							    select card.Value)
-							    .FirstOrDefault();
+								select card.Value)
+								.FirstOrDefault();
 
 				shuffledDeck.RemoveAt(0);
 
-				string dealtCard = deltCardValue + " " + deltCardSuit; 
-			
+				string dealtCard = deltCardValue + " " + deltCardSuit;
+
 				return dealtCard;
 			}
 			else
 			{
-				return "There are no more cards in the deck\n";				
+				return "There are no more cards in the deck\n";
 			}
 		}
 	}

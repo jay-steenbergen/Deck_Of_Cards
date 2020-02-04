@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Deck_Of_Cards
 {
-    public class WriteClass 
+    public class WriteClass : IWriteClass
     {
+
 		public enum Colors
 		{
 			None,
@@ -14,6 +15,10 @@ namespace Deck_Of_Cards
 			Yellow,
 			Cyan,
 			Magenta
+		}
+		public void Clear()
+		{
+			Console.Clear();
 		}
 		public void Deceminter()
 		{
@@ -24,7 +29,6 @@ namespace Deck_Of_Cards
 			Console.ResetColor();
 			this.ApplyColor(color);
 			Console.Write(body);
-			Console.ResetColor();
 
 		}
 		public void WriteLine(Colors color, string body)

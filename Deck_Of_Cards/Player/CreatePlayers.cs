@@ -2,12 +2,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using static Deck_Of_Cards.WriteClass;
 
 namespace Deck_Of_Cards
 {
-    public class CreatePlayers  : WriteClass
+    public class CreatePlayers  
     {
+        IWriteClass _writer;
+        public CreatePlayers(IWriteClass writer)
+        {
+            _writer = writer;
+        }
         public List<Player> listOfPlayers = new List<Player>();
         public List<Player> HowManyPlayers()
         {
@@ -15,7 +20,7 @@ namespace Deck_Of_Cards
             int input;
             while (true)
             {
-                WriteLine(Colors.None, "How many players: ");
+                _writer.WriteLine(Colors.None, "How many players: ");
                 var amountOfPlayers = Console.ReadLine();
                 bool parseSuccess = int.TryParse(amountOfPlayers, out input);
                 if (parseSuccess)
@@ -25,7 +30,7 @@ namespace Deck_Of_Cards
                     return listOfPlayers;
                 }
                 else
-                    WriteLine(Colors.Yellow, "Invalid entry. Try again....");
+                    _writer.WriteLine(Colors.Yellow, "Invalid entry. Try again....");
             }
         }
 
@@ -34,11 +39,11 @@ namespace Deck_Of_Cards
             /// User can now enter Names of players
             for (int i = 0; i < input;)
             {
-                Write(Colors.None, "Enter name: ");
+                _writer.Write(Colors.None, "Enter name: ");
                 string newPlayer = Convert.ToString(Console.ReadLine().Trim());
                 if (newPlayer.Length <= 0)
                 {
-                    WriteLine(Colors.Red, "Invalid Entry....");
+                    _writer.WriteLine(Colors.Red, "Invalid Entry....");
                 }
                 else
                 {
