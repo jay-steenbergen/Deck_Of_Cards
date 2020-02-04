@@ -3,21 +3,19 @@ using System.Collections.Generic;
 
 namespace Deck_Of_Cards
 {
-    public class ShowPlayers
+    public class ShowPlayers : WriteClass
     {
-        public string PrintHand(List<Player> listOfPlayers)
+        public void PrintHand(List<Player> listOfPlayers)
         {
             foreach (var player in listOfPlayers)
             {
                 Console.WriteLine(player.Name);
-                Console.WriteLine("-----------");
+                WriteLine(Colors.Cyan, "-----------");
                 foreach (var card in player.Hand)
                 {
-                    return card;
-                }
-       
+                    WriteLine(Colors.Cyan, card);
+                }       
             };
-            return "No Players";
         }
         public List<string> GetPlayerNames(List<Player> listOfPlayers)
         {
@@ -27,21 +25,6 @@ namespace Deck_Of_Cards
                 listOfNames.Add(player.Name);
             };
             return listOfNames;
-        }
-        static List<string> GetHand(List<Player> listOfPlayers, string playerName)
-        {
-            var listOfCards = new List<string>();
-            foreach (var player in listOfPlayers)
-            {
-                if (player.Name.Contains(playerName))
-                {
-                    foreach (var card in player.Hand)
-                    {
-                        listOfCards.Add(card);
-                    }
-                }
-            }
-            return listOfCards;
         }
     }
 }

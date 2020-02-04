@@ -13,9 +13,9 @@ namespace Deck_Of_Cards
 			Shuffle shuffle = new Shuffle();
 			CreatePlayers createPlayers = new CreatePlayers();
 			Menu menu = new Menu();
-
 			List<KeyValuePair<string, string>> cards = deck.createDeck();
 			List<KeyValuePair<string, string>> shuffledDeck = shuffle.shuffleDeck(cards);
+			Console.ResetColor();
 
 			var listOfPlayers = createPlayers.HowManyPlayers();
 			menu.GameMenu(listOfPlayers, shuffledDeck);

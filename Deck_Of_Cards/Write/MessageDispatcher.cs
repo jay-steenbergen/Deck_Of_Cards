@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Deck_Of_Cards
 {
-    class MessageDispatcher
+    public class MessageDispatcher
     {
         IWriter writer = null;
         public MessageDispatcher(IWriter writer)

@@ -17,5 +17,17 @@ namespace Deck_Of_Cards
                 Console.Write($"{item} ");
             }
         }
+        public void WritTwoPropertiesList(List<string> listMessage)
+        {
+            foreach (var firstItem in listMessage)
+            {
+                Console.WriteLine(firstItem);
+                Console.WriteLine("-----------");
+                foreach (var secondItem in firstItem)
+                {
+
+                }
+            }
+        }
     }
 }
