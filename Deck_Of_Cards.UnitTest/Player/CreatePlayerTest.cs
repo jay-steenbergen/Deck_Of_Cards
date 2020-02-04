@@ -12,7 +12,8 @@ namespace Deck_Of_Cards.UnitTest
         public void HowManyPlayers_PostiveNumber_CreatPlayers()
         {
             // Arrange
-            CreatePlayers createPlayer = new CreatePlayers();
+            WriteClass writer = new WriteClass();
+            CreatePlayers createPlayer = new CreatePlayers(writer);
 
             // Act
             createPlayer.HowManyPlayers();

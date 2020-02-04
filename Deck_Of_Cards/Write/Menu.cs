@@ -25,13 +25,13 @@ namespace Deck_Of_Cards
 			{
 				/////////////////////////////////////////////////////////////////////////////////
 				_writer.Clear();
-				_writer.Deceminter();
+				_writer.Deliminter();
 				_writer.Write(Colors.Blue, "     Deck Of Cards   ");
 				_writer.Write(Colors.Blue, "Players: ");
 				var getPlayerNames = _showPlayers.GetPlayerNames(listOfPlayers); //// Display Player names on screen
 				_writer.WriteList(Colors.Cyan, getPlayerNames);
 				Console.WriteLine();
-				_writer.Deceminter();
+				_writer.Deliminter();
 				////////////////////////////////////////////////////////////////////////////////
 
 				_writer.WriteLine(Colors.None, "Do you want to deal one card? Y/N");
@@ -55,9 +55,7 @@ namespace Deck_Of_Cards
 				{
 					_writer.WriteLine(Colors.None, "You hand is: \n");
 					_writer.Write(Colors.Red, "Your final  \n\n");
-					Console.ForegroundColor = ConsoleColor.Cyan;
 					_showPlayers.PrintHand(listOfPlayers);
-					Console.ResetColor();
 					break;
 				}
 				else

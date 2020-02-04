@@ -15,7 +15,7 @@ namespace Deck_Of_Cards
         {
             foreach (var player in listOfPlayers)
             {
-                Console.WriteLine(player.Name);
+                _writer.WriteLine(Colors.None, player.Name);
                 _writer.WriteLine(Colors.Cyan, "-----------");
                 foreach (var card in player.Hand)
                 {

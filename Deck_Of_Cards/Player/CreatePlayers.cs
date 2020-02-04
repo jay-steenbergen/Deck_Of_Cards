@@ -6,7 +6,7 @@ using static Deck_Of_Cards.WriteClass;
 
 namespace Deck_Of_Cards
 {
-    public class CreatePlayers  
+    public class CreatePlayers 
     {
         IWriteClass _writer;
         public CreatePlayers(IWriteClass writer)
@@ -54,5 +54,5 @@ namespace Deck_Of_Cards
             return listOfPlayers;
         }
 
-    }   
+    }
 }

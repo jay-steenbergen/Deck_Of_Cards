@@ -20,7 +20,7 @@ namespace Deck_Of_Cards
 		{
 			Console.Clear();
 		}
-		public void Deceminter()
+		public void Deliminter()
 		{
 			WriteLine(Colors.None, "============================================================= ");
 		}

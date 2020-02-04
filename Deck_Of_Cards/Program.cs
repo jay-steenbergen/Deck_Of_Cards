@@ -11,8 +11,12 @@ namespace Deck_Of_Cards
         {			
 			Deck deck = new Deck();
 			Shuffle shuffle = new Shuffle();
-			CreatePlayers createPlayers = new CreatePlayers();
-			Menu menu = new Menu();
+			WriteClass writer = new WriteClass();
+			Deal deal = new Deal();
+			PlayersHand playersHand = new PlayersHand(writer);
+			ShowPlayers showPlayers = new ShowPlayers(writer);
+			CreatePlayers createPlayers = new CreatePlayers(writer);
+			Menu menu = new Menu(writer, deal, playersHand, showPlayers);
 			List<KeyValuePair<string, string>> cards = deck.createDeck();
 			List<KeyValuePair<string, string>> shuffledDeck = shuffle.shuffleDeck(cards);
 
