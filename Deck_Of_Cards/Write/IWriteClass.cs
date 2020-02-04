@@ -4,6 +4,7 @@ namespace Deck_Of_Cards
 {
     public interface IWriteClass
     {
+        void BlankLine();
         void Clear();
         void Deliminter();
         void Write(WriteClass.Colors color, string body);

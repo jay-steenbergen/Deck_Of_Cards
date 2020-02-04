@@ -54,7 +54,7 @@ namespace Deck_Of_Cards
 				else if (input == "n")
 				{
 					_writer.WriteLine(Colors.None, "You hand is: \n");
-					_writer.Write(Colors.Red, "Your final  \n\n");
+					_writer.Write(Colors.Red, "Your final hand \n\n");
 					_showPlayers.PrintHand(listOfPlayers);
 					break;
 				}
