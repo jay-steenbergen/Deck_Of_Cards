@@ -30,7 +30,7 @@ namespace Deck_Of_Cards
 				_writer.Write(Colors.Blue, "Players: ");
 				var getPlayerNames = _showPlayers.GetPlayerNames(listOfPlayers); //// Display Player names on screen
 				_writer.WriteList(Colors.Cyan, getPlayerNames);
-				Console.WriteLine();
+				_writer.BlankLine();
 				_writer.Deliminter();
 				////////////////////////////////////////////////////////////////////////////////
 
@@ -48,7 +48,7 @@ namespace Deck_Of_Cards
 					_writer.WriteLine(Colors.None, "\nYour hand:");
 					_showPlayers.PrintHand(listOfPlayers);
 					_writer.WriteLine(Colors.None, "\nPress enter....");
-					Console.ReadLine();
+					_writer.ReadLine();
 				}
 
 				else if (input == "n")
@@ -61,11 +61,11 @@ namespace Deck_Of_Cards
 				else
 				{
 					_writer.WriteLine(Colors.Yellow, "\nInvalid input \nPress enter....");
-					Console.ReadLine();
+					_writer.ReadLine();
 				}
 			}
 			_writer.WriteLine(Colors.Red, $"\n\n\n                   Thanks for playing!");
-			Console.ReadLine();
+			_writer.ReadLine();
 		}
     }
 }

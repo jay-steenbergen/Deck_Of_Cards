@@ -9,45 +9,43 @@ namespace Deck_Of_Cards
     public class CreatePlayers 
     {
         IWriteClass _writer;
-        public CreatePlayers(IWriteClass writer)
+        IUserInput _userInput;
+        public CreatePlayers(IWriteClass writer, IUserInput userInput)
         {
             _writer = writer;
+            _userInput = userInput;
         }
         public List<Player> listOfPlayers = new List<Player>();
-        public List<Player> HowManyPlayers()
+
+        public int HowManyPlayers()
         {
             /// User enters in the Number of player 
-            int input;
             while (true)
             {
                 _writer.WriteLine(Colors.None, "How many players: ");
-                var amountOfPlayers = Console.ReadLine();
-                bool parseSuccess = int.TryParse(amountOfPlayers, out input);
-                if (parseSuccess)
-                {
-                    input = Convert.ToInt32(amountOfPlayers);
-                    var listOfPlayers = EnterNameOfPlayers(input);
-                    return listOfPlayers;
-                }
-                else
-                    _writer.WriteLine(Colors.Yellow, "Invalid entry. Try again....");
+                var numberOfPlayers =_userInput.GetIntInput();
+                if(numberOfPlayers > 0)
+                    return numberOfPlayers;
+                else 
+                    _writer.WriteLine(Colors.Red, "Invalid entry...."); 
+                
             }
         }
 
-        public List<Player> EnterNameOfPlayers(int input)
+        public List<Player> EnterNameOfPlayers(int numberOfPlayers )
         {
             /// User can now enter Names of players
-            for (int i = 0; i < input;)
+            for (int i = 0; i < numberOfPlayers;)
             {
                 _writer.Write(Colors.None, "Enter name: ");
-                string newPlayer = Convert.ToString(Console.ReadLine().Trim());
-                if (newPlayer.Length <= 0)
+                var playerName =_userInput.GetStringInput();
+                if (playerName.Length <= 0)
                 {
                     _writer.WriteLine(Colors.Red, "Invalid Entry....");
                 }
                 else
                 {
-                    listOfPlayers.Add(new Player(newPlayer, i));
+                    listOfPlayers.Add(new Player(playerName, i));
                     i++;
                 }
             }

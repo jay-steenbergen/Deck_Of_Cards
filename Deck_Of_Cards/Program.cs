@@ -15,12 +15,14 @@ namespace Deck_Of_Cards
 			Deal deal = new Deal();
 			PlayersHand playersHand = new PlayersHand(writer);
 			ShowPlayers showPlayers = new ShowPlayers(writer);
-			CreatePlayers createPlayers = new CreatePlayers(writer);
+			UserInput userInput = new UserInput(writer);
+			CreatePlayers createPlayers = new CreatePlayers(writer, userInput);
 			Menu menu = new Menu(writer, deal, playersHand, showPlayers);
 			List<KeyValuePair<string, string>> cards = deck.createDeck();
 			List<KeyValuePair<string, string>> shuffledDeck = shuffle.shuffleDeck(cards);
 
-			var listOfPlayers = createPlayers.HowManyPlayers();
+			var numberOfPlayers = createPlayers.HowManyPlayers();
+			var listOfPlayers = createPlayers.EnterNameOfPlayers(numberOfPlayers);
 			menu.GameMenu(listOfPlayers, shuffledDeck);
 		}
     }

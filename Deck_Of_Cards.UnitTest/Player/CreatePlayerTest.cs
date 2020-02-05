@@ -9,19 +9,19 @@ namespace Deck_Of_Cards.UnitTest
     class CreatePlayerTest
     {
         [TestMethod]
-        public void HowManyPlayers_PostiveNumber_CreatPlayers()
+        public void HowManyPlayers_PostiveNumber()
         {
             // Arrange
             WriteClass writer = new WriteClass();
             CreatePlayers createPlayer = new CreatePlayers(writer);
+            int expected = 3;
 
             // Act
-            createPlayer.HowManyPlayers();
-            int input = 3;
-            createPlayer.EnterNameOfPlayers(input);
+            var actual = createPlayer.HowManyPlayers();
+          
 
             // Assert
-
+            Assert.AreEqual(expected, actual);
         }
     }
 }

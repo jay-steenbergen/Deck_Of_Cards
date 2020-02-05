@@ -20,6 +20,10 @@ namespace Deck_Of_Cards
 		{
 			Console.Clear();
 		}
+		public void ReadLine()
+		{
+			Console.ReadLine();
+		}
 		public void BlankLine()
 		{
 			Console.WriteLine();
