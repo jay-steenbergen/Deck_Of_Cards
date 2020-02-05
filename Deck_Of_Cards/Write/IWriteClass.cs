@@ -7,6 +7,7 @@ namespace Deck_Of_Cards
         void BlankLine();
         void Clear();
         void ReadLine();
+        string Input();
         void Deliminter();
         void Write(WriteClass.Colors color, string body);
         void WriteLine(WriteClass.Colors color, string body);

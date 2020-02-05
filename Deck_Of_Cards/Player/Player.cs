@@ -5,7 +5,7 @@ namespace Deck_Of_Cards
 {
     public class Player
     {
-        private int Id { get; set; }
+        private int Id { get;  set; }
         public string Name {  get; private set; }
 
         public List<string> Hand;

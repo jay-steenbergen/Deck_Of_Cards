@@ -30,10 +30,7 @@ namespace Deck_Of_Cards
                 else
                 {
                     _writer.WriteLine(Colors.Red, "Invalid entry....");
-
-
-                }
-                
+                }              
             }
         }
 

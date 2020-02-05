@@ -24,6 +24,10 @@ namespace Deck_Of_Cards
 		{
 			Console.ReadLine();
 		}
+		public string Input()
+		{
+			return Console.ReadLine();
+		}
 		public void BlankLine()
 		{
 			Console.WriteLine();
@@ -54,7 +58,7 @@ namespace Deck_Of_Cards
 				Console.Write(item + " ");
 			}
 		}
-		public void ApplyColor(Colors color)
+		private void ApplyColor(Colors color)
 		{
 			switch(color)
 			{

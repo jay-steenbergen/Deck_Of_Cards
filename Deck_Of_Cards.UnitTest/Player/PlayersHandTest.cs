@@ -14,7 +14,7 @@ namespace Deck_Of_Cards.UnitTest
         {
             // Arrange
             WriteClass write = new WriteClass();
-            FakePostiveUserInput input = new FakePostiveUserInput();
+            FakeUserInput input = new FakeUserInput();
             PlayersHand playersHand = new PlayersHand(write, input);
 
             var expectedtList = new List<Player>();
@@ -37,7 +37,7 @@ namespace Deck_Of_Cards.UnitTest
         {
             // Arrange
             WriteClass write = new WriteClass();
-            FakePostiveUserInput input = new FakePostiveUserInput();
+            FakeUserInput input = new FakeUserInput();
             PlayersHand playersHand = new PlayersHand(write, input);
 
             var expectedtList = new List<Player>();

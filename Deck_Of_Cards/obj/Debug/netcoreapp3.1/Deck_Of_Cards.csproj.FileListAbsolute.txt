@@ -13,3 +13,4 @@ D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netc
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Nest.dll
+D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.csprojAssemblyReference.cache

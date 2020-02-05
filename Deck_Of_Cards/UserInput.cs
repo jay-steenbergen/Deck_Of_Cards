@@ -5,7 +5,7 @@ using static Deck_Of_Cards.WriteClass;
 
 namespace Deck_Of_Cards
 {
-    class UserInput : IUserInput
+    public class UserInput : IUserInput
     {
         IWriteClass _writer;
         public UserInput(IWriteClass writer)
@@ -15,7 +15,7 @@ namespace Deck_Of_Cards
         public int GetIntInput()
         {
             int input;
-            var amountOfPlayers = Console.ReadLine().Trim();
+            var amountOfPlayers = _writer.Input();
             bool parseSuccess = int.TryParse(amountOfPlayers, out input);
             if (parseSuccess)
             {

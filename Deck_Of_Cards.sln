@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deck_Of_Cards", "Deck_Of_Cards\Deck_Of_Cards.csproj", "{36B1A32D-456E-4303-8910-FBD160EB6AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck_Of_Cards.UnitTest", "Deck_Of_Cards.UnitTest\Deck_Of_Cards.UnitTest.csproj", "{88ADA1B9-2B5D-43C6-BFA2-716AA6C23268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deck_Of_Cards.UnitTest", "Deck_Of_Cards.UnitTest\Deck_Of_Cards.UnitTest.csproj", "{88ADA1B9-2B5D-43C6-BFA2-716AA6C23268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

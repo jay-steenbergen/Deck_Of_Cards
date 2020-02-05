@@ -4,8 +4,8 @@ using static Deck_Of_Cards.WriteClass;
 
 namespace Deck_Of_Cards
 {
-    class Menu 
-    {
+	class Menu : IMenu
+	{
 		IWriteClass _writer;
 		IDeal _deal;
 		IPlayersHand _playersHand;
@@ -21,8 +21,8 @@ namespace Deck_Of_Cards
 			_userInput = userInput;
 
 		}
-        public void GameMenu(List<Player> listOfPlayers, List<KeyValuePair<string, string>> shuffledDeck)
-        {
+		public void GameMenu(List<Player> listOfPlayers, List<KeyValuePair<string, string>> shuffledDeck)
+		{
 			while (true)
 			{
 				/////////////////////////////////////////////////////////////////////////////////
@@ -68,5 +68,5 @@ namespace Deck_Of_Cards
 			_writer.WriteLine(Colors.Red, $"\n\n\n                   Thanks for playing!");
 			_writer.ReadLine();
 		}
-    }
+	}
 }

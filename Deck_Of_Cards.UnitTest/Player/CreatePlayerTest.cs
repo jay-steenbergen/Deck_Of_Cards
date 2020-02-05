@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Deck_Of_Cards.UnitTest
 {
-    public class FakePostiveUserInput : IUserInput
+    public class FakeUserInput : IUserInput
     {
         public int GetIntInput()
         {
@@ -25,7 +25,7 @@ namespace Deck_Of_Cards.UnitTest
         {
             // Arrange
             WriteClass writer = new WriteClass();
-            FakePostiveUserInput userInput = new FakePostiveUserInput();
+            FakeUserInput userInput = new FakeUserInput();
             CreatePlayers createPlayer = new CreatePlayers(writer, userInput);
             int expected = 3;
 
@@ -41,9 +41,9 @@ namespace Deck_Of_Cards.UnitTest
         {
             // Arrange
             WriteClass writer = new WriteClass();
-            FakePostiveUserInput userInput = new FakePostiveUserInput();
+            FakeUserInput userInput = new FakeUserInput();
             CreatePlayers createPlayers = new CreatePlayers(writer, userInput);
-
+            
             //Act
             int expected = userInput.GetIntInput();
             var actual = createPlayers.EnterNameOfPlayers(expected);
