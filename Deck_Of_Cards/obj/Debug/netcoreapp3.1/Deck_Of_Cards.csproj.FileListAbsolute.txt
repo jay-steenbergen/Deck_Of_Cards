@@ -1,5 +1,4 @@
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\Deck_Of_Cards.exe
-D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.csprojAssemblyReference.cache
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.AssemblyInfoInputs.cache
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\obj\Debug\netcoreapp3.1\Deck_Of_Cards.AssemblyInfo.cs
 D:\Users\jay.steenbergen\source\repos\Deck_Of_Cards\Deck_Of_Cards\bin\Debug\netcoreapp3.1\nunit.framework.dll

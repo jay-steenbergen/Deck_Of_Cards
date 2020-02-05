@@ -53,9 +53,8 @@ namespace Deck_Of_Cards
 			{
 				Console.Write(item + " ");
 			}
-			Console.ResetColor();
 		}
-		private void ApplyColor(Colors color)
+		public void ApplyColor(Colors color)
 		{
 			switch(color)
 			{

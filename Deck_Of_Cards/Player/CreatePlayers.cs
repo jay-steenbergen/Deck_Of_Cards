@@ -15,6 +15,7 @@ namespace Deck_Of_Cards
             _writer = writer;
             _userInput = userInput;
         }
+
         public List<Player> listOfPlayers = new List<Player>();
 
         public int HowManyPlayers()
@@ -24,15 +25,19 @@ namespace Deck_Of_Cards
             {
                 _writer.WriteLine(Colors.None, "How many players: ");
                 var numberOfPlayers =_userInput.GetIntInput();
-                if(numberOfPlayers > 0)
+                if (numberOfPlayers > 0)
                     return numberOfPlayers;
-                else 
-                    _writer.WriteLine(Colors.Red, "Invalid entry...."); 
+                else
+                {
+                    _writer.WriteLine(Colors.Red, "Invalid entry....");
+
+
+                }
                 
             }
         }
 
-        public List<Player> EnterNameOfPlayers(int numberOfPlayers )
+        public List<Player> EnterNameOfPlayers(int numberOfPlayers)
         {
             /// User can now enter Names of players
             for (int i = 0; i < numberOfPlayers;)

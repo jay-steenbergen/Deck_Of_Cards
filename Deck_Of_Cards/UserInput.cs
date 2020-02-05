@@ -15,7 +15,7 @@ namespace Deck_Of_Cards
         public int GetIntInput()
         {
             int input;
-            var amountOfPlayers = Console.ReadLine();
+            var amountOfPlayers = Console.ReadLine().Trim();
             bool parseSuccess = int.TryParse(amountOfPlayers, out input);
             if (parseSuccess)
             {
@@ -27,7 +27,7 @@ namespace Deck_Of_Cards
         }
         public string GetStringInput()
         {
-            string input;
+
             var stringInput = Convert.ToString(Console.ReadLine().Trim());
             return stringInput;
         }

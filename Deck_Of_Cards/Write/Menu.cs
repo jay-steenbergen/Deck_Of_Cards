@@ -10,13 +10,15 @@ namespace Deck_Of_Cards
 		IDeal _deal;
 		IPlayersHand _playersHand;
 		IShowPlayers _showPlayers;
+		IUserInput _userInput;
 
-		public Menu(IWriteClass writer, IDeal deal, IPlayersHand playersHand, IShowPlayers showPlayer)
+		public Menu(IWriteClass writer, IDeal deal, IPlayersHand playersHand, IShowPlayers showPlayer, IUserInput userInput)
 		{
 			_writer = writer;
 			_deal = deal;
 			_playersHand = playersHand;
 			_showPlayers = showPlayer;
+			_userInput = userInput;
 
 		}
         public void GameMenu(List<Player> listOfPlayers, List<KeyValuePair<string, string>> shuffledDeck)
@@ -35,8 +37,7 @@ namespace Deck_Of_Cards
 				////////////////////////////////////////////////////////////////////////////////
 
 				_writer.WriteLine(Colors.None, "Do you want to deal one card? Y/N");
-				var input = Console.ReadLine().ToLower().Trim();
-
+				var input = _userInput.GetStringInput();
 				if (input == "y")
 				{
 					var deltCard = _deal.dealOneCard(shuffledDeck);

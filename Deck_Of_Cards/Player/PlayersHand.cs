@@ -7,18 +7,20 @@ namespace Deck_Of_Cards
     public class PlayersHand : IPlayersHand
     {
         IWriteClass _writer;
-        public PlayersHand(IWriteClass writer)
+        IUserInput _userInput;
+        public PlayersHand(IWriteClass writer, IUserInput userInput)
         {
             _writer = writer;
+            _userInput = userInput;
         }
         public void AddCardToHand(string deltCard, List<Player> listOfPlayers)
         {
+            int count = 0;
             var flag = true;
             while (flag)
             {
                 _writer.WriteLine(Colors.None, "What player do you want to deal: ");
-                string playerName = Convert.ToString(Console.ReadLine());
-                int count = 0;
+                string playerName = _userInput.GetStringInput();
                 foreach (var player in listOfPlayers)
                 {
                     if (playerName.Length <= 0)
@@ -26,7 +28,7 @@ namespace Deck_Of_Cards
                         _writer.WriteLine(Colors.Red, "No player found...\n");
                         break;
                     }
-                    else if (player.Name.Contains(playerName, StringComparison.CurrentCultureIgnoreCase))
+                    else if (string.Equals(player.Name, playerName, StringComparison.CurrentCultureIgnoreCase))
                     {
                         player.Hand.Add(deltCard);
 
@@ -40,6 +42,7 @@ namespace Deck_Of_Cards
                     count++;
                 }
             }
+          
         }
     }
 }
