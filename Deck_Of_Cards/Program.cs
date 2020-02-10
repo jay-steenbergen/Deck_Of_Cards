@@ -16,7 +16,8 @@ namespace Deck_Of_Cards
 			PlayersHand playersHand = new PlayersHand(writer, userInput);
 			ShowPlayers showPlayers = new ShowPlayers(writer);
 			CreatePlayers createPlayers = new CreatePlayers(writer, userInput);
-			Menu menu = new Menu(writer, deal, playersHand, showPlayers, userInput);
+			MenuWriter menuWriter = new MenuWriter(writer, deal, playersHand, showPlayers);
+			Menu menu = new Menu(writer, menuWriter, userInput);
 			FileWriter fileWriter = new FileWriter();
 			List<KeyValuePair<string, string>> cards = deck.createDeck();
 			List<KeyValuePair<string, string>> shuffledDeck = shuffle.shuffleDeck(cards);

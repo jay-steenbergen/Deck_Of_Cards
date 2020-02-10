@@ -7,6 +7,11 @@ namespace Deck_Of_Cards.UnitTest
 {
     public class FakeUserInput : IUserInput
     {
+        public FakeUserInput(FakeWriterClass writer)
+        {
+
+        }
+
         public int GetIntInput()
         {
             return 3;

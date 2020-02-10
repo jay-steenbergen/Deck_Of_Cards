@@ -2,6 +2,7 @@
 {
     public interface IUserInput
     {
+        string MenuAnswer();
         int GetIntInput();
         string GetStringInput();
     }

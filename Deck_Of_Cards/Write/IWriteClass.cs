@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static Deck_Of_Cards.WriteClass;
 
 namespace Deck_Of_Cards
 {
@@ -9,8 +10,8 @@ namespace Deck_Of_Cards
         void ReadLine();
         string Input();
         void Deliminter();
-        void Write(WriteClass.Colors color, string body);
-        void WriteLine(WriteClass.Colors color, string body);
-        void WriteList(WriteClass.Colors color, List<string> list);
+        void Write(Colors color, string body);
+        void WriteLine(Colors color, string body);
+        void WriteList(Colors color, List<string> list);
     }
 }

@@ -11,6 +11,7 @@ namespace Deck_Of_Cards
         public UserInput(IWriteClass writer)
         {
             _writer = writer;
+
         }
         public int GetIntInput()
         {
@@ -30,6 +31,12 @@ namespace Deck_Of_Cards
 
             var stringInput = Convert.ToString(Console.ReadLine().Trim());
             return stringInput;
+        }
+        public string MenuAnswer()
+        {
+            _writer.WriteLine(Colors.None, "Do you want to deal one card? Y/N");
+            var input = Convert.ToString(Console.ReadLine().Trim());
+            return input;
         }
     }
 }

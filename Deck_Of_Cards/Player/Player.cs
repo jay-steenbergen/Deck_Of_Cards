@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace Deck_Of_Cards
 {
-    public class Player
+    public class Player : IPlayer
     {
-        private int Id { get;  set; }
-        public string Name {  get; private set; }
+        private int Id { get; set; }
+        public string Name { get; private set; }
 
         public List<string> Hand;
 
@@ -16,6 +16,6 @@ namespace Deck_Of_Cards
             Name = name;
             Hand = new List<string>();
         }
-      
+
     }
 }
